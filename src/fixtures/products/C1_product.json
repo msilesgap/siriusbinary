@@ -1,0 +1,23 @@
+{
+    "name": "Premium Quality",
+    "type": "simple",
+    "regular_price": "10.99",
+    "description": "This is a new Automation T-Shirt",
+    "short_description": "Automation T-Shirt",
+    "categories": [
+      {
+        "id": 9
+      },
+      {
+        "id": 14
+      }
+    ],
+    "images": [
+      {
+        "src": "http://demo.woothemes.com/woocommerce/wp-content/uploads/sites/56/2013/06/T_2_front.jpg"
+      },
+      {
+        "src": "http://demo.woothemes.com/woocommerce/wp-content/uploads/sites/56/2013/06/T_2_back.jpg"
+      }
+    ]
+  }

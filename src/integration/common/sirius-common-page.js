@@ -46,4 +46,8 @@ export class SiriousCommonPage {
     return TestTool.url()
   }
 
+  executeSearch(searchCriteria){
+    TestTool.get('#woocommerce-product-search-field-0').should('be.visible').clear().type(searchCriteria)
+    TestTool.get('#woocommerce-product-search-field-0').type('{enter}')
+  }
 }

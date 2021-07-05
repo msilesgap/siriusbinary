@@ -41,4 +41,15 @@ export class Util {
     }
     return url
   }
+
+  static getFixtures(name) {
+    const fixtures = {
+      alerts: '',
+      C1: 'products/C1_product.json'
+    }
+    switch (name) {
+      case 'C1':
+        return fixtures.C1
+    }
+  }
 }
