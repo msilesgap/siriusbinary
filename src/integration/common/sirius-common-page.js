@@ -50,4 +50,16 @@ export class SiriousCommonPage {
     TestTool.get('#woocommerce-product-search-field-0').should('be.visible').clear().type(searchCriteria)
     TestTool.get('#woocommerce-product-search-field-0').type('{enter}')
   }
+
+  verifyPriceAtTop(price){
+    return TestTool.get('.woocommerce-Price-amount.amount').should('be.visible').then($element => { 
+      expect($element).to.contain(price)
+    })
+  }
+
+  verifyItemCount(itemCount){
+    return TestTool.get('#site-header-cart .cart-contents .count').should('be.visible').then($element => { 
+      expect($element).to.contain(itemCount)
+    })
+  }
 }
