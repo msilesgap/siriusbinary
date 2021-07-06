@@ -21,7 +21,7 @@ describe('Shopping Cart', () => {
     })
   })
 
-  it('C5-Add Products into the Shopping Cart', () => {
+  it('C4-Add Products into the Shopping Cart', () => {
     let homePage = new HomePage()
     let searchPage = new SearchPage(false)
     homePage.executeSearch(productName)

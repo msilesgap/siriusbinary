@@ -21,7 +21,7 @@ describe('Shopping Cart', () => {
     })
   })
 
-  it('C6-Verify Shopping Cart can be empty', () => {
+  it('C5-Verify Shopping Cart can be empty', () => {
     let homePage = new HomePage()
     let searchPage = new SearchPage(false)
     homePage.executeSearch(productName)
