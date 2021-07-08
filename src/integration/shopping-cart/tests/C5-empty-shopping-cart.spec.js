@@ -4,7 +4,7 @@ import { APIProducts } from '../../products/api/api-products'
 import { HomePage } from '../../home/pages/home-page'
 import { SearchPage } from '../../search/pages/search-page'
 
-describe('Shopping Cart', () => {
+describe('Shopping Cart Empty', () => {
   let productObj
   let productID
   let productName

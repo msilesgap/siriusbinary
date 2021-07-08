@@ -6,3 +6,4 @@ mochawesome-report/
 src/integration/.vs/slnx.sqlite
 src/integration/.vs/VSWorkspaceState.json
 testrail-cache.txt
+TestReport/

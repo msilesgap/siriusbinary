@@ -1,7 +1,7 @@
 import { HomePage } from '../../home/pages/home-page'
 import { SearchPage } from '../pages/search-page'
 
-describe('Search Page', () => {
+describe('Search Page Non Existing', () => {
   it('C2-Search for non existing product', () => {
     let homePage = new HomePage()
     let searchPage = new SearchPage(false)
