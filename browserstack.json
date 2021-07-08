@@ -5,9 +5,9 @@
   },
   "browsers": [{
       "os": "Windows 10",
-      "browser": "edge",
+      "browser": "chrome",
       "versions": ["latest"]
-    }
+    }    
   ],
   "run_settings": {
     "npm_dependencies": {
