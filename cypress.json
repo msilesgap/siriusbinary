@@ -1,4 +1,5 @@
 {
+  "baseUrl": "http://18.191.135.47:8000/",
   "fixturesFolder": "src/fixtures",
   "integrationFolder": "src/integration",
   "testFiles": [ "**/*.spec.js" ],

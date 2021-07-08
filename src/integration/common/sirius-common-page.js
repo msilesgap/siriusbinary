@@ -1,4 +1,3 @@
-import { cookie } from 'request-promise-native'
 import { TestTool } from '../../lib/test-tool'
 
 export class SiriousCommonPage {

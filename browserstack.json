@@ -1,0 +1,38 @@
+{
+  "auth": {
+    "username": "browserstack_8Pp0mQ",
+    "access_key": "QgFfrZpnNaMzAgvZeaTa"
+  },
+  "browsers": [{
+      "os": "Windows 10",
+      "browser": "edge",
+      "versions": ["latest"]
+    },
+    {
+      "os": "Windows 10",
+      "browser": "firefox",
+      "versions": ["latest"]
+    },
+    {
+      "os": "OS X Mojave",
+      "browser": "chrome",
+      "versions": ["latest"]
+    }
+  ],
+  "run_settings": {
+    "npm_dependencies": {
+      "@cypress/skip-test": "^2.5.0",
+      "mocha": "^7.2.0",
+      "mocha-multi-reporters": "^1.1.7",
+      "mochawesome": "^5.0.0",
+      "mochawesome-merge": "^4.2.0",
+      "mochawesome-report-generator": "^4.1.0"
+    },
+    "cypress_config_file": "./cypress.json",
+    "cypress_version": "7",
+    "project_name": "Sirius Binary",
+    "build_name": "Build no. 1",
+    "parallels": "5"
+    
+  }
+}

@@ -11,16 +11,15 @@
     "delete:reportFolder": "rm -rf mochawesome-report/",
     "test:cli": "npm run delete:reportFolder && cypress run",
     "merge:reports": "mochawesome-merge mochawesome-report/*.json > cypress-combined-report.json",
-    "create:html:report": "npm run merge:reports && marge --reportDir TestReport cypress-combined-report.json"    
-  },  
+    "create:html:report": "npm run merge:reports && marge --reportDir TestReport cypress-combined-report.json"
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@4tw/cypress-drag-drop": "^1.6.0",
     "@cypress/skip-test": "^2.5.0",
     "axios": "^0.21.1",
     "axios-debug-log": "^0.6.2",
-    "cypress": "^6.9.1",
+    "cypress": "^7.0.1",
     "eslint": "^6.8.0",
     "eslint-config-standard": "^14.1.0",
     "eslint-plugin-cypress": "^2.10.3",
@@ -37,6 +36,6 @@
     "request-promise-native": "^1.0.8"
   },
   "dependencies": {
-    "cypress-file-upload": "^4.1.1"
+    "browserstack-cypress-cli": "^1.8.1"
   }
 }

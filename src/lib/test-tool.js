@@ -1,4 +1,3 @@
-
 export class TestTool {
   static get (selector, time = 4000) {//Time, in milliseconds, to wait until most DOM based commands are considered timed out
     return cy.get(selector, { timeout : time })
@@ -122,7 +121,7 @@ export class TestTool {
   }
 
   static getTimeStamp () {
-    return Cypress.moment().format('x')
+    return Math.floor(Date.now() / 1000)
   }
 
   static Promise (fn) {
@@ -131,29 +130,6 @@ export class TestTool {
 
   static env (envVariable) {
     return Cypress.env(envVariable)
-  }
-
-  static moment (date) {
-    if(date)
-      return Cypress.moment(date)
-    else
-      return Cypress.moment().locale('us')
-  }
-
-  static getCurrentDate (numbderDays = 0) {
-    return Cypress.moment().add(numbderDays, 'days').format('MM/DD/YYYY')
-  }
-
-  static isValidDate (date) {
-    return Cypress.moment(date, 'MM/DD/YYYY', true).isValid()
-  }
-
-  static isValidFullDate (date) {
-    return Cypress.moment(date, 'MM/DD/YYYY HH:mm:ss a', true).isValid()
-  }
-
-  static reformatDate (date) {
-    return Cypress.moment(date).format('M/D/YYYY h:mm:ss A')
   }
 
   static task (fn, arg) {
