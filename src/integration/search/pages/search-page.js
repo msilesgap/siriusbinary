@@ -15,7 +15,7 @@ export class SearchPage extends SiriousCommonPage {
   }
 
   verifyExistingProduct(productObj) {
-    TestTool.get('.product_title.entry-title').should('be.visible').contains(productObj.name)
+    TestTool.get('.product_title.entry-title', 10000).should('be.visible').contains(productObj.name)
     TestTool.get('.woocommerce-Price-amount.amount').should('be.visible').contains(productObj.regular_price)
     TestTool.get('.woocommerce-Tabs-panel.woocommerce-Tabs-panel--description.panel.entry-content.wc-tab').should('be.visible').contains(productObj.description)
   }
