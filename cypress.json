@@ -14,6 +14,12 @@
     "runMode": 2,
     "openMode": 0
   },
+  "reporter": "../node_modules/mochawesome/src/mochawesome.js",
+  "reporterOptions": {
+      "overwrite": false,
+      "html": false,
+      "json": true
+  },
   "downloadsFolder": "cypress/downloads",
   "trashAssetsBeforeRuns": true
 }
