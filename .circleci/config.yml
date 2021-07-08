@@ -4,6 +4,12 @@ version: 2.1
 orbs:
   cypress: cypress-io/cypress@1
   
+workflows:
+  build:
+    jobs:
+      - cypress/run:
+          record: true
+  
 machine:
   environment:
     BROWSERSTACK_USERNAME: "browserstack_8Pp0mQ"
