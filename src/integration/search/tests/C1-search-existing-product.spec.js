@@ -21,7 +21,7 @@ describe('Search Page', () => {
     })
   })
 
-  it('C1-Search for an existing product', () => {
+  it.skip('C1-Search for an existing product', () => {
     let homePage = new HomePage()
     let searchPage = new SearchPage(false)
     homePage.executeSearch(productName)
