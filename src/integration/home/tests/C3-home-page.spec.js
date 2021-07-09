@@ -6,7 +6,7 @@ describe('Home Page', () => {
     homePage = new HomePage()
   })
 
-  it('C3-Verify Home page is displayed correctly', () => {
+  it.skip('C3-Verify Home page is displayed correctly', () => {
     homePage.getPageTitle().contains('Testing Playground')
     homePage.getSectionTitle().contains('Shop by Category').should('be.visible')
     homePage.getSectionTitle().contains('New In').should('be.visible')
