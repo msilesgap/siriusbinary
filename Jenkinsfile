@@ -9,7 +9,7 @@ pipeline {
 		}
 		stage ('Run Smoke Test Tests') {
 			steps {
-				echo 'Running Smoke Tests'
+				sh 'echo "Running Smoke Tests"'
 			}
 		}
 		stage ('Run Functionality Tests') {
