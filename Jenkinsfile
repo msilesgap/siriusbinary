@@ -8,9 +8,9 @@ pipeline {
 			}
 		}
 		stage ('Run Smoke Test Tests') {
-			steps {
-				sh 'echo "Running Smoke Tests"'
-			}
+            steps {
+                sh 'echo "Hello World"'s
+            }
 		}
 		stage ('Run Functionality Tests') {
 			steps {
